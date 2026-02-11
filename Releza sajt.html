@@ -1,0 +1,174 @@
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"RELEZA" Zanatlija – kućne popravke, servis i izrada unikatnog namještaja </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; background: #f2f4f7; color: #333; }
+        header { background: #1f2d3d; color: white; padding: 50px 20px 30px; text-align: center; }
+        header h1 { margin: 0; font-size: 36px; font-weight: 600; }
+        header p { margin-top: 10px; font-size: 18px; opacity: 0.9; }
+        .top-contact { margin-top: 20px; font-size: 16px; line-height: 1.6; }
+
+        .hero-image {
+            width: 100%;
+            height: 260px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/X-Men_logo.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        h2 { color: #1f2d3d; margin-top: 40px; }
+        ul { list-style: none; padding: 0; }
+        li { background: white; padding: 12px 15px; margin: 8px 0; border-radius: 8px; display: flex; align-items: center; gap: 10px; }
+        li span.icon { font-size: 20px; }
+
+        .tabs { margin-top: 20px; display: flex; gap: 10px; }
+        .tab-btn {
+            padding: 10px 15px;
+            background: #d9dce1;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .tab-btn.active { background: #1f2d3d; color: white; }
+
+        .tab-content { display: none; margin-top: 15px; }
+        .tab-content.active { display: block; }
+
+        .contact-box { background: #ffffff; padding: 20px; border-radius: 10px; margin-top: 20px; }
+        .call-btn { display: block; background: #27ae60; color: white; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-size: 18px; margin-top: 20px; }
+        .call-btn:hover { background: #219150; }
+
+        footer { text-align: center; padding: 20px; margin-top: 40px; color: #555; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>"RELEZA" Zanatlija</h1>
+    <p>Kućne popravke, servis i izrada unikatnog namještaja – Kotor i Tivat</p>
+
+    <div class="top-contact">
+        <strong>Vlasnik:</strong> Branislav Marković<br>
+        <strong>Telefon:</strong> +382 069 270 405<br>
+        <strong>Lokacija:</strong> Kotor i Tivat
+    </div>
+</header>
+
+<div class="hero-image"></div>
+
+<div class="container">
+
+    <h2>O nama</h2>
+
+    <div class="tabs">
+        <div class="tab-btn active" onclick="openTab('sr')">SR</div>
+        <div class="tab-btn" onclick="openTab('en')">EN</div>
+        <div class="tab-btn" onclick="openTab('ru')">RU</div>
+    </div>
+
+    <div id="sr" class="tab-content active">
+        <p>RELEZA pruža pouzdane i brze kućne popravke na području Kotora i Tivta. Vlasnik Branislav Marković ima dugogodišnje iskustvo u terenskom radu i pristupa svakom poslu profesionalno i odgovorno. Takođe ima dugogodišnje iskustvo u izradi unikatnog namještaja i filigramskih suvenira od gvožđa. </p>
+    </div>
+
+    <div id="en" class="tab-content">
+        <p>RELEZA provides reliable and fast home repairs in the area of ​​Kotor and Tivat. The owner, Branislav Marković, has many years of experience in field work and approaches every job professionally and responsibly. He also has many years of experience in making unique furniture and filigree iron souvenirs.</p>
+    </div>
+
+    <div id="ru" class="tab-content">
+        <p>Компания RELEZA предоставляет надежные и быстрые услуги по ремонту домов в районах Котора и Тивата. Владелец, Бранислав Маркович, имеет многолетний опыт работы на объектах и ​​подходит к каждой задаче профессионально и ответственно. Он также обладает многолетним опытом изготовления уникальной мебели и филигранных сувениров из железа.</p>
+    </div>
+
+    <script>
+        function openTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            event.target.classList.add('active');
+            document.getElementById(tab).classList.add('active');
+        }
+    </script>
+    
+    <h2>Slike</h2>
+
+    <body> 
+    
+        <img src="/slika1.jpg" height="300">
+        <img src="/slika2.jpg" height="300">
+        <img src="/slika3.jpg" height="300">
+        <img src="/slika4.jpg" height="300">
+        <img src="/slika5.jpg" height="300">
+        <img src="/slika6.jpg" height="300">
+        <img src="/slika7.jpg" height="300">
+        <img src="/slika8.jpg" height="300">
+        <img src="/slika9.jpg" height="300">
+        <img src="/slika10.jpg" height="300">
+        <img src="/slika11.jpg" height="300">
+        <img src="/slika12.jpg" height="300">
+        <img src="/slika14.jpg" height="300">
+    </body>
+    
+
+
+    <h2>Usluge – Kupatilo</h2>
+    <ul>
+        <li><span class="icon">🚿</span>Zamjena lavabo baterije</li>
+        <li><span class="icon">🚿</span>Zamjena tuš baterije</li>
+        <li><span class="icon">🚽</span>Zamjena zidnog vodokotlića</li>
+        <li><span class="icon">🚽</span>Zamjena integrisanog vodokotlića sa šoljom</li>
+        <li><span class="icon">🚽</span>Zamjena WC šolje</li>
+        <li><span class="icon">🛁</span>Zamjena lavaboa</li>
+        <li><span class="icon">🛁</span>Zamjena bojlera</li>
+        <li><span class="icon">🛁</span>Ugradnja grijalice za kupatilo</li>
+        <li><span class="icon">🔧</span>Priključak i zamjena veš mašine</li>
+        <li><span class="icon">🔧</span>Zamjena ventila vodokotlića i veš mašine</li>
+        <li><span class="icon">🔧</span>Zamjena odvodnog crijeva i sifona (lavabo)</li>
+        <li><span class="icon">🪞</span>Montaža ogledala i polica u kupatilu</li>
+    </ul>
+
+    <h2>Usluge – Kuhinja</h2>
+    <ul>
+        <li><span class="icon">🎛️</span>Ugradnja ugradne pećnice</li>
+        <li><span class="icon">🔧</span>Ugradnja ravne ploče</li>
+        <li><span class="icon">🔧</span>Montaža aspiratora</li>
+        <li><span class="icon">🚰</span>Zamjena sudopere</li>
+        <li><span class="icon">🔧</span>Zamjena ventila mašine za suđe</li>
+        <li><span class="icon">🔧</span>Zamjena sifona sudopere</li>
+        <li><span class="icon">🍽️</span>Priključak i zamjena mašine za suđe</li>
+        <li><span class="icon">❄️</span>Čišćenje filtera klime</li>
+    </ul>
+
+    <h2>Ostale usluge</h2>
+    <ul>
+        <li><span class="icon">🔌</span>Zamjena utikača</li>
+        <li><span class="icon">💡</span>Zamjena prekidača</li>
+        <li><span class="icon">💡</span>Montaža lustera</li>
+        <li><span class="icon">📬</span>Montaža poštanskog sandučeta</li>
+        <li><span class="icon">🔐</span>Zamjena cilindra brave</li>
+        <li><span class="icon">🔐</span>Zamjena komplet brave</li>
+        <li><span class="icon">📚</span>Montaža jednostavnih polica</li>
+        <li><span class="icon">🖼️</span>Postavljanje slika</li>
+        <li><span class="icon">🪟</span>Montaža garnišni</li>
+        <li><span class="icon">📚</span>Montaža polica za knjige</li>
+    </ul>
+
+    <div class="contact-box">
+        <h2>Kontakt</h2>
+        <p><strong>Telefon:</strong> +382 069 270 405</p>
+        <p><strong>Vlasnik:</strong> Branislav Marković</p>
+        <p><strong>Lokacija:</strong> Kotor i Tivat</p>
+        <a class="call-btn" href="tel:+38269270405">Pozovi odmah</a>
+    </div>
+
+</div>
+
+<footer>
+    © RELEZA – kućne popravke i servis
+</footer>
+
+</body>
+</html>
